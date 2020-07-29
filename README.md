@@ -13,3 +13,7 @@ Contains Minimal ADB & Fastboot and Google USB Drivers.
 Download Link : https://github.com/uncannyjish/recovery-installer-windows/releases
 
 Please don't tamper the directory structure and follow the instructions carefully.
+
+Feedbacks are appreciated.
+
+Telegram - https://t.me/talktouncannyjish
