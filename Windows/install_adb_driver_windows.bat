@@ -1,13 +1,13 @@
-@ECHO OFF
+@echo off
 
 :: This batch file installs necessary USB drivers and sets up adb...
 
-TITLE ADB & Driver Installer
+title ADB & Driver Installer
 
-ECHO Installing latest drivers...
+echo Installing latest drivers...
 
 pnputil /add-driver "%~dp0Driver\android_winusb.inf" /subdirs /install
 
-ECHO Congratulations! You're ready to go...
+echo Congratulations! You're ready to go...
 
-PAUSE
+pause
