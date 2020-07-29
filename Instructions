@@ -19,7 +19,7 @@ Instructions:
 1. Extract the zip.
 2. Copy the renamed recovery image into the folder named "images".
 3. Open the folder named "Windows".
-4. Run 'install_adb_driver_windows.bat'.
+4. Right click 'install_adb_driver_windows.bat' and click 'Run as administrator'.
 5. Run 'twrp_install_windows.bat'.
 
 TWRP will be installed and your phone will automatically boot into it.
