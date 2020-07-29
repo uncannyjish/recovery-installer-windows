@@ -13,8 +13,8 @@ echo Detecting you device(should be on fastboot screen[Power+volume down])...
 
 echo Issue solved... Flashing recovery and booting...
 
-"~dp0adb-fastboot\fastboot.exe" %* flash recovery "%~dp0..\images\recovery.img" || @echo "Flash recovery error" && exit /B 1
+"~dp0adb-fastboot\fastboot.exe" %* flash recovery "%~dp0..\images\recovery_ginkgo.img" || @echo "Flash recovery error" && exit /B 1
 
-"~dp0adb-fastboot\fastboot.exe" %* boot "%~dp0..\images\recovery.img"
+"~dp0adb-fastboot\fastboot.exe" %* boot "%~dp0..\images\recovery_ginkgo.img"
 
 pause
