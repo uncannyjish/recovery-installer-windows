@@ -10,6 +10,6 @@ Supported Devices : Redmi Note 8 (Ginkgo)
 
 Contains Minimal ADB & Fastboot and Google USB Drivers.
 
-Download Link : https://github.com/uncannyjish/recovery-installer-linux/releases
+Download Link : https://github.com/uncannyjish/recovery-installer-windows/releases
 
 Please don't tamper the directory structure and follow the instructions carefully.
