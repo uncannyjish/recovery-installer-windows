@@ -6,7 +6,7 @@ An automated TWRP installer for Windows Users
 
 A simple attempt to make the TWRP installation process easier for unlocked devices. 
 
-Supported Devices : Redmi Note 8 (Ginkgo)
+Supported Devices : Redmi 4x(Santoni), Redmi Note 4X(Mido), Redmi Note 8(Ginkgo)
 
 Contains Minimal ADB & Fastboot and Google USB Drivers.
 
