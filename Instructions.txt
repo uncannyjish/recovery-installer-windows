@@ -20,8 +20,9 @@ Instructions:
 
 1. Extract the zip.
 2. Copy the renamed recovery image into the folder named "images".
-4. Right click 'start.bat' and click 'Run as administrator'.
-5. Put your phone in fastboot and connect.
+3. Right click 'start.bat' and click 'Run as administrator'.
+4. Put your phone in fastboot and connect.
+5. Follow On screen instructions.
 
 Note: Please don't alter the folders or files. The zip is to be extracted completely and used as it is provided. 
 It's user's own responsibility if any damage occurs to the device due to tampering of the files.
