@@ -50,9 +50,9 @@ cls
 echo.
 echo "Installing Drivers..."
 echo.
-pnputil /add-driver "%~dp0Driver\android_winusb.inf" /subdirs /install
+pnputil /add-driver %~dp0Driver\android_winusb.inf /subdirs /install
 cls
-echo "Drivers installed successfully."
+echo "Drivers installed successfully..."
 pause>nul
 goto entry
 
@@ -77,10 +77,10 @@ echo.
 echo.
 set /p device=Enter your choice:
 
-if /i '%choice' == '1' call "%~dp0Batch\install.bat" mido & goto second
-if /i '%choice' == '2' call "%~dp0Batch\install.bat" ginkgo & goto second
-if /i '%choice' == '3' call "%~dp0Batch\install.bat" santoni & goto second
-if /i '%choice' == '4' call "%~dp0Batch\install.bat" willow & goto second
+if /i '%choice' == '1' call %~dp0Batch\install.bat mido
+if /i '%choice' == '2' call %~dp0Batch\install.bat ginkgo
+if /i '%choice' == '3' call %~dp0Batch\install.bat santoni
+if /i '%choice' == '4' call %~dp0Batch\install.bat willow
 if /i '%choice' == '5' goto entry
 
 echo.
@@ -103,7 +103,7 @@ echo.
 echo.
 set /p device=Enter your choice:
 
-if /i '%choice' == '1' call "%~dp0Batch\fix.bat" ginkgo & goto third
+if /i '%choice' == '1' call %~dp0Batch\fix.bat ginkgo
 if /i '%choice' == '2' goto entry
 
 echo.
