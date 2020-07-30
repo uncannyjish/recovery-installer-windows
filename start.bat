@@ -70,15 +70,18 @@ echo "2] Ginkgo"
 echo.
 echo "3] Santoni"
 echo.
-echo "4] Return to Main Menu"
+echo "4] Willow"
+echo.
+echo "5] Return to Main Menu"
 echo.
 echo.
 set /p device=Enter your choice:
 
-if /i '%choice' == '1' call "%~dp0Batch\install.bat" mido & goto first
-if /i '%choice' == '2' call "%~dp0Batch\install.bat" ginkgo & goto first
-if /i '%choice' == '3' call "%~dp0Batch\install.bat" santoni & goto first
-if /i '%choice' == '4' goto entry
+if /i '%choice' == '1' call "%~dp0Batch\install.bat" mido & goto second
+if /i '%choice' == '2' call "%~dp0Batch\install.bat" ginkgo & goto second
+if /i '%choice' == '3' call "%~dp0Batch\install.bat" santoni & goto second
+if /i '%choice' == '4' call "%~dp0Batch\install.bat" willow & goto second
+if /i '%choice' == '5' goto entry
 
 echo.
 echo.
@@ -100,7 +103,7 @@ echo.
 echo.
 set /p device=Enter your choice:
 
-if /i '%choice' == '1' call "%~dp0Batch\fix.bat" ginkgo & goto second
+if /i '%choice' == '1' call "%~dp0Batch\fix.bat" ginkgo & goto third
 if /i '%choice' == '2' goto entry
 
 echo.

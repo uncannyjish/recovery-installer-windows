@@ -5,27 +5,23 @@
 
 Disclaimer: I'm not responsible for any damage that occurs to your device by the improper use of this tool or not following the instructions. Please understand the risks before proceeding further.
 
-The tool only supports Redmi Note 8(Ginkgo) as of now.
+Supported Devices: Redmi 4X(Santoni), Redmi Note 4(Mido), Redmi Note 8(Ginkgo), Redmi Note 8T(Willow)
 
 Prequisites:
 
-1. Redmi Note 8(ginkgo) with unlocked bootloader
-2. TWRP Recovery - https://dl.twrp.me/ginkgo
+1. Any supported device with unlocked bootloader
+2. TWRP Recovery - https://twrp.me/Devices/Xiaomi/
 
-Download the latest twrp recovery image and rename it to "recovery_ginkgo".
+Download the latest twrp recovery image and rename it to "recovery_<devicename>".
+
+For e.g. : If you have ginkgo, rename the file to "recovery_ginkgo".
 
 Instructions:
 
 1. Extract the zip.
 2. Copy the renamed recovery image into the folder named "images".
-3. Open the folder named "Windows".
-4. Right click 'install_adb_driver_windows.bat' and click 'Run as administrator'.
+4. Right click 'start.bat' and click 'Run as administrator'.
 5. Put your phone in fastboot and connect.
-6. Run 'twrp_install_windows.bat'.
-
-TWRP will be installed and your phone will automatically boot into it.
-
-If you encounter a "system destroyed" while booting to recovery anytime, you could just run 'destroyed_fix_windows.bat'.
 
 Note: Please don't alter the folders or files. The zip is to be extracted completely and used as it is provided. 
 It's user's own responsibility if any damage occurs to the device due to tampering of the files.
