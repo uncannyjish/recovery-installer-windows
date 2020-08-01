@@ -48,7 +48,7 @@ cls
 echo.
 echo "Installing Drivers..."
 echo.
-runas /user:Administrator pnputil /add-driver %~dp0Driver\android_winusb.inf /subdirs /install
+runas /user:Administrator pnputil /add-driver "%~dp0Driver\android_winusb.inf" /subdirs /install
 echo.
 echo "Press Any Key to Continue..."
 pause>nul
@@ -76,19 +76,19 @@ echo.
 set /p device=Enter your choice:  
 
 if /i '%device%' == '1' (
-	call %~dp0Batch\install.bat mido
+	call "%~dp0Batch\install.bat mido"
 	goto second
 )
 if /i '%device%' == '2' (
-	call %~dp0Batch\install.bat ginkgo
+	call "%~dp0Batch\install.bat ginkgo"
 	goto second
 )
 if /i '%device%' == '3' (
-	call %~dp0Batch\install.bat santoni
+	call "%~dp0Batch\install.bat santoni"
 	goto second
 )
 if /i '%device%' == '4' (
-	call %~dp0Batch\install.bat willow
+	call "%~dp0Batch\install.bat willow"
 	goto second
 )
 if /i '%device%' == '5' goto entry
@@ -114,7 +114,7 @@ echo.
 set /p fix=Enter your choice:
 
 if /i '%fix%' == '1' ( 
-	call %~dp0Batch\fix.bat ginkgo
+	call "%~dp0Batch\fix.bat ginkgo"
 	goto third
 )
 if /i '%fix%' == '2' goto entry
