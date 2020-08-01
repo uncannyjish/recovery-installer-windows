@@ -48,7 +48,7 @@ cls
 echo.
 echo "Installing Drivers..."
 echo.
-pnputil /add-driver %~dp0Driver\android_winusb.inf /subdirs /install
+runas /user:Administrator pnputil /add-driver %~dp0Driver\android_winusb.inf /subdirs /install
 echo.
 echo "Press Any Key to Continue..."
 pause>nul
