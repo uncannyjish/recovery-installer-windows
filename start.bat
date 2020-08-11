@@ -1,16 +1,16 @@
 @echo off
 
-:: TWRP Installer 0.2 by @uncannyjish
+:: Recovery Installer 0.3 by @uncannyjish
 
 cls
 
-title TWRP Installer 0.2
+title Recovery Installer 0.3
 :entry
 cls
 echo.
 echo ================================================
 echo.
-echo    TWRP Installer 0.2 by @ uncannyjish
+echo    Recovery Installer 0.3 by @ uncannyjish
 echo.
 echo ================================================
 echo.
@@ -46,11 +46,11 @@ goto entry
 
 cls
 echo.
-echo "Installing Drivers..."
+echo Installing Drivers...
 echo.
 runas /user:Administrator pnputil /add-driver "%~dp0Driver\android_winusb.inf" /subdirs /install
 echo.
-echo "Press Any Key to Continue..."
+echo Press Any Key to Continue...
 pause>nul
 goto entry
 
@@ -59,18 +59,41 @@ goto entry
 
 cls
 echo.
+echo Have you downloaded the recovery image, renamed it and placed it in images folder according to the insructions?
+echo.
+set /p conf=(y/n):
+if /i '%conf%' == 'n' (
+	echo Please do that first. Press Enter after you're done.
+	pause>nul
+	goto second
+)
+if /i '%conf%' == 'y' (
+	goto confirmed
+)
+echo.
+echo.
+echo Can't you read?  Try again.
+pause>nul
+goto second
+
+:confirmed
+
+cls
+echo.
 echo Select Your Device
 echo.
 echo.
-echo 1] Mido
+echo 1] Redmi Note 4X [Mido]
 echo.
-echo 2] Ginkgo
+echo 2] Redmi Note 8 [Ginkgo]
 echo.
-echo 3] Santoni
+echo 3] Redmi 4X [Santoni]
 echo.
-echo 4] Willow
+echo 4] Redmi Note 8T [Willow]
 echo.
-echo 5] Return to Main Menu
+echo 5] Redmi K20 Pro [Raphael]
+echo.
+echo 6] Return to Main Menu
 echo.
 echo.
 set /p device=Enter your choice:  
@@ -91,7 +114,11 @@ if /i '%device%' == '4' (
 	call "%~dp0Batch\install.bat" willow
 	goto second
 )
-if /i '%device%' == '5' goto entry
+if /i '%device%' == '5' (
+	call "%~dp0Batch\install.bat" raphael
+	goto second
+)
+if /i '%device%' == '6' goto entry
 
 echo.
 echo.
