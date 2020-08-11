@@ -70,6 +70,7 @@ if /i '%conf%' == 'n' (
 if /i '%conf%' == 'y' (
 	goto confirmed
 )
+
 echo.
 echo.
 echo Can't you read?  Try again.
