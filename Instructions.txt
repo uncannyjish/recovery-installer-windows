@@ -1,24 +1,27 @@
 =================================================================
-	TWRP Installer 0.1 for Windows	by @uncannyjish	
+	TWRP Installer 0.3 for Windows by @uncannyjish	
 =================================================================
 
 
-Disclaimer: I'm not responsible for any damage that occurs to your device by the improper use of this tool or not following the instructions. Please understand the risks before proceeding further.
+Disclaimer: I'm not responsible for any damage that occurs to your device by the improper use of this tool or not following the instructions. 
+Please understand the risks before proceeding further.
 
-Supported Devices: Redmi 4X(Santoni), Redmi Note 4(Mido), Redmi Note 8(Ginkgo), Redmi Note 8T(Willow)
+Supported Devices: Redmi 4X(Santoni), Redmi Note 4(Mido), Redmi Note 8(Ginkgo), Redmi Note 8T(Willow), Redmi K20 Pro(Raphael)
 
 Prequisites:
 
 1. Any supported device with unlocked bootloader
-2. TWRP Recovery - https://twrp.me/Devices/Xiaomi/
+2. Supported recovery image or your device
 
-Download the latest twrp recovery image and rename it to "recovery_<devicename>".
+Download the latest recovery image and rename it to "<devicename>".
 
-For e.g. : If you have ginkgo, rename the file to "recovery_ginkgo".
+For e.g. : If you have ginkgo, rename the file to "ginkgo".
+
+P.S : Some recoveries provide you a flashable zip. Extract the image file and use it. The tool only works with img files.
 
 Instructions:
 
-1. Extract the zip.
+1. Extract the zip contents to a folder.
 2. Copy the renamed recovery image into the folder named "images".
 3. Right click 'start.bat' and click 'Run as administrator'.
 4. Put your phone in fastboot and connect.
