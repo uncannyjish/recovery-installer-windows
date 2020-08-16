@@ -18,7 +18,7 @@ echo.
 echo What do you want to do?
 echo.
 echo.
-echo 1] Install Drivers
+echo 1] Install ADB & Drivers
 echo.
 echo 2] Install Recovery
 echo.
@@ -38,7 +38,7 @@ if /i '%choice%' == '4' goto end
 echo.
 echo.
 echo Can't you read?  Try again.
-pause>nul
+pause >nul
 goto entry
 
 
@@ -50,9 +50,13 @@ echo Installing Drivers...
 echo.
 runas /user:Administrator pnputil /add-driver "%~dp0Driver\android_winusb.inf" /subdirs /install
 echo.
-echo Press Any Key to Continue...
-pause>nul
-goto entry
+echo Installing ADB System-Wide...
+echo.
+setx ANDROID_HOME "%~dp0adb-fastboot"
+echo.
+echo Closing Command Window...
+timeout /t 2 /nobreak
+exit
 
 
 :second
@@ -74,7 +78,7 @@ if /i '%conf%' == 'y' (
 echo.
 echo.
 echo Can't you read?  Try again.
-pause>nul
+pause >nul
 goto second
 
 :confirmed
@@ -124,7 +128,7 @@ if /i '%device%' == '6' goto entry
 echo.
 echo.
 echo Can't you read?  Try again.
-pause>nul
+pause >nul
 goto second
 
 :third
@@ -150,7 +154,7 @@ if /i '%fix%' == '2' goto entry
 echo.
 echo.
 echo Can't you read? Try again.
-pause>nul
+pause >nul
 goto third
 
 pause
