@@ -51,7 +51,9 @@ echo.
 pnputil /add-driver "%~dp0Driver\android_winusb.inf" /subdirs /install
 echo.
 echo Installing ADB System-Wide...
-setx ANDROID_HOME "%~dp0adb-fastboot" /M
+md "C:\Android\adb-fastboot"
+copy "%~dp0adb-fastboot" "C:\Android\adb-fastboot"
+setx ANDROID_HOME "C:\Android\adb-fastboot" /M
 echo.
 echo Closing Command Window...
 timeout /t 5 /nobreak
@@ -67,7 +69,7 @@ echo.
 set /p conf=(y/n):
 if /i '%conf%' == 'n' (
 	echo Please do that first. Press Enter after you're done.
-	pause>nul
+	pause >nul
 	goto second
 )
 if /i '%conf%' == 'y' (
@@ -149,7 +151,6 @@ if /i '%fix%' == '1' (
 	goto third
 )
 if /i '%fix%' == '2' goto entry
-
 echo.
 echo.
 echo Can't you read? Try again.

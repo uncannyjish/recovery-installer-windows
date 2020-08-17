@@ -15,7 +15,7 @@ Prequisites:
 
 Download the latest recovery image and rename it to "<devicename>".
 
-For e.g. : If you have ginkgo, rename the file to "ginkgo".
+For e.g. : If you have ginkgo, rename the file to "ginkgo". Extension should remain the default one.
 
 P.S : Some recoveries provide you a flashable zip. Extract the image file and use it. The tool only works with img files.
 
