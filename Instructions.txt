@@ -1,5 +1,5 @@
 =================================================================
-	TWRP Installer 0.3 for Windows by @uncannyjish	
+	TWRP Installer 0.4 for Windows by @uncannyjish	
 =================================================================
 
 
@@ -23,7 +23,7 @@ Instructions:
 
 1. Extract the zip contents to a folder.
 2. Copy the renamed recovery image into the folder named "images".
-3. Right click 'start.bat' and click 'Run as administrator'.
+3. Run the file named 'RunMe'. 
 4. Put your phone in fastboot and connect.
 5. Follow On screen instructions.
 

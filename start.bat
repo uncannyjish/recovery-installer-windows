@@ -1,16 +1,16 @@
 @echo off
 
-:: Recovery Installer 0.3 by @uncannyjish
+:: Recovery Installer 0.4 by @uncannyjish
 
 cls
 
-title Recovery Installer 0.3
+title Recovery Installer 0.4
 :entry
 cls
 echo.
 echo ================================================
 echo.
-echo    Recovery Installer 0.3 by @ uncannyjish
+echo    Recovery Installer 0.4 by @ uncannyjish
 echo.
 echo ================================================
 echo.
@@ -18,7 +18,7 @@ echo.
 echo What do you want to do?
 echo.
 echo.
-echo 1] Install ADB & Drivers
+echo 1] Install ADB and Drivers
 echo.
 echo 2] Install Recovery
 echo.
@@ -48,14 +48,13 @@ cls
 echo.
 echo Installing Drivers...
 echo.
-runas /user:Administrator pnputil /add-driver "%~dp0Driver\android_winusb.inf" /subdirs /install
+pnputil /add-driver "%~dp0Driver\android_winusb.inf" /subdirs /install
 echo.
 echo Installing ADB System-Wide...
-echo.
-setx ANDROID_HOME "%~dp0adb-fastboot"
+setx ANDROID_HOME "%~dp0adb-fastboot" /M
 echo.
 echo Closing Command Window...
-timeout /t 2 /nobreak
+timeout /t 5 /nobreak
 exit
 
 
