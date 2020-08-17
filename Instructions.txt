@@ -1,5 +1,5 @@
 =================================================================
-	TWRP Installer 0.4 for Windows by @uncannyjish	
+	TWRP Installer 0.5 for Windows by @uncannyjish	
 =================================================================
 
 
@@ -23,9 +23,12 @@ Instructions:
 
 1. Extract the zip contents to a folder.
 2. Copy the renamed recovery image into the folder named "images".
-3. Run the file named 'RunMe'. 
-4. Put your phone in fastboot and connect.
-5. Follow On screen instructions.
+3. Run the file named 'RunMe'.
+4. Install ADB & Drivers First.
+5. Put your phone in fastboot and connect.
+6. Follow On screen instructions.
 
 Note: Please don't alter the folders or files. The zip is to be extracted completely and used as it is provided. 
 It's user's own responsibility if any damage occurs to the device due to tampering of the files.
+
+Note: On some older devices, a reboot might be required after driver installation.
