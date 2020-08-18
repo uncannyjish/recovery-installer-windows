@@ -1,26 +1,34 @@
 =================================================================
-	TWRP Installer 0.5 for Windows by @uncannyjish	
+	Uncanny Recovery Installer 0.6 for Windows by @uncannyjish	
 =================================================================
-
 
 Disclaimer: I'm not responsible for any damage that occurs to your device by the improper use of this tool or not following the instructions. 
 Please understand the risks before proceeding further.
 
-Supported Devices: Redmi 4X(Santoni), Redmi Note 4(Mido), Redmi Note 8(Ginkgo), Redmi Note 8T(Willow), Redmi K20 Pro(Raphael)
+Supported Devices: 
+1. Redmi 4X(Santoni)
+2. Redmi Note 4X(Mido)
+3. Redmi Note 5/Redmi 5 Plus(Vince)
+4. Redmi Note 5 Pro(Whyred)
+5. Redmi Note 6 Pro(Tulip)
+6. Redmi Note 7/7S(Lavender)
+7. Redmi Note 7 Pro(Violet)
+8. Redmi Note 8(Ginkgo)
+9. Redmi Note 8T(Willow)
+10. Redmi K20(Davinci)
+11. Redmi K20 Pro(Raphael)
+12. Pocophone F1(Beryllium)
 
 Prequisites:
-
 1. Any supported device with unlocked bootloader
 2. Supported recovery image or your device
 
+Preparation:
 Download the latest recovery image and rename it to "<devicename>".
-
 For e.g. : If you have ginkgo, rename the file to "ginkgo". Extension should remain the default one.
-
 P.S : Some recoveries provide you a flashable zip. Extract the image file and use it. The tool only works with img files.
 
 Instructions:
-
 1. Extract the zip contents to a folder. {Refer Note}
 2. Copy the renamed recovery image into the folder named "images".
 3. Run the file named 'RunMe'.

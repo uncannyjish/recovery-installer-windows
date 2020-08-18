@@ -1,16 +1,16 @@
 @echo off
 
-:: Recovery Installer 0.4 by @uncannyjish
+:: Uncanny Recovery Installer 0.6 by @uncannyjish
 
 cls
 
-title Recovery Installer 0.4
+title Uncanny Recovery Installer 0.6
 :entry
 cls
 echo.
 echo ================================================
 echo.
-echo    Recovery Installer 0.4 by @ uncannyjish
+echo    Uncanny Recovery Installer 0.6 by @uncannyjish
 echo.
 echo ================================================
 echo.
@@ -89,42 +89,84 @@ echo.
 echo Select Your Device
 echo.
 echo.
-echo 1] Redmi Note 4X [Mido]
+echo 1] Redmi 4X [Santoni]
 echo.
-echo 2] Redmi Note 8 [Ginkgo]
+echo 2] Redmi Note 4X [Mido]
 echo.
-echo 3] Redmi 4X [Santoni]
+echo 3] Redmi Note 5/Redmi 5 Plus [Vince]
 echo.
-echo 4] Redmi Note 8T [Willow]
+echo 4] Redmi Note 5 Pro [Whyred]
 echo.
-echo 5] Redmi K20 Pro [Raphael]
+echo 5] Redmi Note 6 Pro [Tulip]
 echo.
-echo 6] Return to Main Menu
+echo 6] Redmi Note 7/7S [Lavender]
+echo.
+echo 7] Redmi Note 7 Pro [Violet]
+echo.
+echo 8] Redmi Note 8 [Ginkgo]
+echo.
+echo 9] Redmi Note 8T [Willow]
+echo.
+echo 10] Redmi K20 [Davinci]
+echo.
+echo 11] Redmi K20 Pro [Raphael]
+echo.
+echo 12] Pocophone F1 [Beryllium]
+echo.
+echo 13] Return to Main Menu
 echo.
 echo.
 set /p device=Enter your choice:  
 
 if /i '%device%' == '1' (
-	call "%~dp0Batch\install.bat" mido
-	goto second
-)
-if /i '%device%' == '2' (
-	call "%~dp0Batch\install.bat" ginkgo
-	goto second
-)
-if /i '%device%' == '3' (
 	call "%~dp0Batch\install.bat" santoni
 	goto second
 )
+if /i '%device%' == '2' (
+	call "%~dp0Batch\install.bat" mido
+	goto second
+)
+if /i '%device%' == '3' (
+	call "%~dp0Batch\install.bat" vince
+	goto second
+)
 if /i '%device%' == '4' (
-	call "%~dp0Batch\install.bat" willow
+	call "%~dp0Batch\install.bat" whyred
 	goto second
 )
 if /i '%device%' == '5' (
+	call "%~dp0Batch\install.bat" tulip
+	goto second
+)
+if /i '%device%' == '6' (
+	call "%~dp0Batch\install.bat" lavender
+	goto second
+)
+if /i '%device%' == '7' (
+	call "%~dp0Batch\install.bat" violet
+	goto second
+)
+if /i '%device%' == '8' (
+	call "%~dp0Batch\install.bat" ginkgo
+	goto second
+)
+if /i '%device%' == '9' (
+	call "%~dp0Batch\install.bat" willow
+	goto second
+)
+if /i '%device%' == '10' (
+	call "%~dp0Batch\install.bat" davinci
+	goto second
+)
+if /i '%device%' == '11' (
 	call "%~dp0Batch\install.bat" raphael
 	goto second
 )
-if /i '%device%' == '6' goto entry
+if /i '%device%' == '12' (
+	call "%~dp0Batch\install.bat" beryllium
+	goto second
+)
+if /i '%device%' == '13' goto entry
 
 echo.
 echo.

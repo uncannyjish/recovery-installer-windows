@@ -1,8 +1,8 @@
 @echo off
 
-:: TWRP Installer 0.5 by @uncannyjish
+:: Uncanny Recovery Installer 0.6 by @uncannyjish
 
-title TWRP Installer 0.5
+title Uncanny Recovery Installer 0.6
 
 echo Detecting your device(should be on fastboot screen[Power+volume down])... 
 

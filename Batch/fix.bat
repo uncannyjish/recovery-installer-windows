@@ -1,8 +1,8 @@
 @echo off
 
-:: TWRP Installer 0.5 by @uncannyjish
+:: Uncanny Recovery Installer 0.6 by @uncannyjish
 
-title System Destroyed Fix 0.5
+title System Destroyed Fix 0.6
 
 echo Detecting you device(should be on fastboot screen[Power+volume down])... 
 
