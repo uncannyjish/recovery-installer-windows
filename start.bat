@@ -183,7 +183,9 @@ echo.
 echo.
 echo 1] Ginkgo
 echo.
-echo 2] Return to Main Menu
+echo 2] Violet
+echo.
+echo 3] Return to Main Menu
 echo.
 echo.
 set /p fix=Enter your choice:
@@ -192,7 +194,11 @@ if /i '%fix%' == '1' (
 	call "%~dp0Batch\fix.bat" ginkgo
 	goto third
 )
-if /i '%fix%' == '2' goto entry
+if /i '%fix%' == '2' ( 
+	call "%~dp0Batch\fix.bat" violet
+	goto third
+)
+if /i '%fix%' == '3' goto entry
 echo.
 echo.
 echo Can't you read? Try again.
