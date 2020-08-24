@@ -1,16 +1,18 @@
 @echo off
 
-:: Uncanny Recovery Installer 0.6 by @uncannyjish
+:: Uncanny Recovery Installer 0.7 by @uncannyjish
 
 cls
 
-title Uncanny Recovery Installer 0.6
+title Uncanny Recovery Installer 0.7
+
 :entry
+
 cls
 echo.
 echo ================================================
 echo.
-echo    Uncanny Recovery Installer 0.6 by @uncannyjish
+echo    Uncanny Recovery Installer 0.7 by @uncannyjish
 echo.
 echo ================================================
 echo.
@@ -89,85 +91,90 @@ echo.
 echo Select Your Device
 echo.
 echo.
-echo 1] Redmi 4X [Santoni]
+echo 1] Redmi 3S [Land]
 echo.
-echo 2] Redmi Note 4X [Mido]
+echo 2] Redmi 4X [Santoni]
 echo.
-echo 3] Redmi Note 5/Redmi 5 Plus [Vince]
+echo 3] Redmi Note 3 [Kenzo]
 echo.
-echo 4] Redmi Note 5 Pro [Whyred]
+echo 4] Redmi Note 4X [Mido]
 echo.
-echo 5] Redmi Note 6 Pro [Tulip]
+echo 5] Redmi Note 5/Redmi 5 Plus [Vince]
 echo.
-echo 6] Redmi Note 7/7S [Lavender]
+echo 6] Redmi Note 5 Pro [Whyred]
 echo.
-echo 7] Redmi Note 7 Pro [Violet]
+echo 7] Redmi Note 6 Pro [Tulip]
 echo.
-echo 8] Redmi Note 8 [Ginkgo]
+echo 8] Redmi Note 7/7S [Lavender]
 echo.
-echo 9] Redmi Note 8T [Willow]
+echo 9] Redmi Note 7 Pro [Violet]
 echo.
-echo 10] Redmi K20 [Davinci]
+echo 10] Redmi Note 8 [Ginkgo]
 echo.
-echo 11] Redmi K20 Pro [Raphael]
+echo 11] Redmi Note 8T [Willow]
 echo.
-echo 12] Pocophone F1 [Beryllium]
+echo 12] Redmi K20 [Davinci/Davinciin]
 echo.
-echo 13] Return to Main Menu
+echo 13] Redmi K20 Pro [Raphael/Raphaelin]
+echo.
+echo 14] Pocophone F1 [Beryllium]
+echo.
+echo 15] Return to Main Menu
 echo.
 echo.
 set /p device=Enter your choice:  
 
 if /i '%device%' == '1' (
-	call "%~dp0Batch\install.bat" santoni
-	goto second
+	call "%~dp0Batch\install.bat" land
+	goto entry
 )
 if /i '%device%' == '2' (
-	call "%~dp0Batch\install.bat" mido
-	goto second
+	call "%~dp0Batch\install.bat" santoni
+	goto entry
 )
 if /i '%device%' == '3' (
-	call "%~dp0Batch\install.bat" vince
-	goto second
+	call "%~dp0Batch\install.bat" kenzo
+	goto entry
 )
 if /i '%device%' == '4' (
-	call "%~dp0Batch\install.bat" whyred
-	goto second
+	call "%~dp0Batch\install.bat" mido
+	goto entry
 )
 if /i '%device%' == '5' (
-	call "%~dp0Batch\install.bat" tulip
-	goto second
+	call "%~dp0Batch\install.bat" vince
+	goto entry
 )
 if /i '%device%' == '6' (
-	call "%~dp0Batch\install.bat" lavender
-	goto second
+	call "%~dp0Batch\install.bat" whyred
+	goto entry
 )
 if /i '%device%' == '7' (
-	call "%~dp0Batch\install.bat" violet
-	goto second
+	call "%~dp0Batch\install.bat" tulip
+	goto entry
 )
 if /i '%device%' == '8' (
-	call "%~dp0Batch\install.bat" ginkgo
-	goto second
+	call "%~dp0Batch\install.bat" lavender
+	goto entry
 )
 if /i '%device%' == '9' (
-	call "%~dp0Batch\install.bat" willow
-	goto second
+	call "%~dp0Batch\install.bat" violet
+	goto entry
 )
 if /i '%device%' == '10' (
-	call "%~dp0Batch\install.bat" davinci
-	goto second
+	call "%~dp0Batch\install.bat" ginkgo
+	goto entry
 )
 if /i '%device%' == '11' (
-	call "%~dp0Batch\install.bat" raphael
-	goto second
+	call "%~dp0Batch\install.bat" willow
+	goto entry
 )
-if /i '%device%' == '12' (
+if /i '%device%' == '12' goto din
+if /i '%device%' == '13' goto rin
+if /i '%device%' == '14' (
 	call "%~dp0Batch\install.bat" beryllium
-	goto second
+	goto entry
 )
-if /i '%device%' == '13' goto entry
-
+if /i '%device%' == '15' goto entry
 echo.
 echo.
 echo Can't you read?  Try again.
@@ -192,11 +199,11 @@ set /p fix=Enter your choice:
 
 if /i '%fix%' == '1' ( 
 	call "%~dp0Batch\fix.bat" ginkgo
-	goto third
+	goto entry
 )
 if /i '%fix%' == '2' ( 
 	call "%~dp0Batch\fix.bat" violet
-	goto third
+	goto entry
 )
 if /i '%fix%' == '3' goto entry
 echo.
@@ -204,5 +211,43 @@ echo.
 echo Can't you read? Try again.
 pause >nul
 goto third
+
+:din
+
+echo.
+echo Indian Variant? [Recovery Image Should be Named Accordingly]
+set /p d=(y/n):
+if /i '%d%' == 'y' (
+	call "%~dp0Batch\install.bat" davinciin
+	goto entry
+)
+if /i '%d%' == 'n' (
+	call "%~dp0Batch\install.bat" davinci
+	goto entry
+)
+echo.
+echo.
+echo Can't you read? Try again.
+pause >nul
+goto din
+
+:rin
+
+echo.
+echo Indian Variant? [Recovery Image Should be Named Accordingly]
+set /p d=(y/n):
+if /i '%d%' == 'y' (
+	call "%~dp0Batch\install.bat" raphaelin
+	goto entry
+)	
+if /i '%d%' == 'n' (
+	call "%~dp0Batch\install.bat" raphael
+	goto entry
+)
+echo.
+echo.
+echo Can't you read? Try again.
+pause >nul
+goto rin
 
 pause

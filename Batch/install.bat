@@ -1,9 +1,12 @@
 @echo off
 
-:: Uncanny Recovery Installer 0.6 by @uncannyjish
+:: Uncanny Recovery Installer 0.7 by @uncannyjish
 
-title Uncanny Recovery Installer 0.6
+title Uncanny Recovery Installer 0.7
 
+cls
+
+echo.
 echo Detecting your device(should be on fastboot screen[Power+volume down])... 
 
 fastboot getvar product 2>&1 | findstr /r /c:"^product: *%1" || echo Missmatching image and device
