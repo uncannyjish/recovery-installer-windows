@@ -1,23 +1,25 @@
 =================================================================
-	Uncanny Recovery Installer 0.6 for Windows by @uncannyjish	
+	Uncanny Recovery Installer 0.7 for Windows by @uncannyjish	
 =================================================================
 
 Disclaimer: I'm not responsible for any damage that occurs to your device by the improper use of this tool or not following the instructions. 
 Please understand the risks before proceeding further.
 
 Supported Devices: 
-1. Redmi 4X(Santoni)
-2. Redmi Note 4X(Mido)
-3. Redmi Note 5/Redmi 5 Plus(Vince)
-4. Redmi Note 5 Pro(Whyred)
-5. Redmi Note 6 Pro(Tulip)
-6. Redmi Note 7/7S(Lavender)
-7. Redmi Note 7 Pro(Violet)
-8. Redmi Note 8(Ginkgo)
-9. Redmi Note 8T(Willow)
-10. Redmi K20(Davinci)
-11. Redmi K20 Pro(Raphael)
-12. Pocophone F1(Beryllium)
+1. Redmi 3S(Land)
+2. Redmi 4X(Santoni)
+3. Redmi Note 3(Kezno)
+4. Redmi Note 4X(Mido)
+5. Redmi Note 5/Redmi 5 Plus(Vince)
+6. Redmi Note 5 Pro(Whyred)
+7. Redmi Note 6 Pro(Tulip)
+8. Redmi Note 7/7S(Lavender)
+9. Redmi Note 7 Pro(Violet)
+10. Redmi Note 8(Ginkgo)
+11. Redmi Note 8T(Willow)
+12. Redmi K20(Davinci)
+13. Redmi K20 Pro(Raphael)
+14. Pocophone F1(Beryllium)
 
 Prequisites:
 1. Any supported device with unlocked bootloader
