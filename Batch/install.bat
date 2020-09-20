@@ -1,8 +1,8 @@
 @echo off
 
-:: Uncanny Recovery Installer 0.7 by @uncannyjish
+:: Uncanny Recovery Installer 0.8 by @uncannyjish
 
-title Uncanny Recovery Installer 0.7
+title Uncanny Recovery Installer 0.8
 
 cls
 
@@ -18,7 +18,7 @@ fastboot flash antirbpass %~dp0..\images\dummy_whyred.img || @echo "Flash antirb
 
 fastboot flash recovery "%~dp0..\images\%1.img" || @echo "Flash recovery error" && exit /B 1
 
-echo Install Successful!!! Booting to recovery...
+echo Install Successful! Booting to recovery...
 
 fastboot boot "%~dp0..\images\%1.img"
 

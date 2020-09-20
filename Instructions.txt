@@ -1,5 +1,5 @@
 =================================================================
-	Uncanny Recovery Installer 0.7 for Windows by @uncannyjish	
+	Uncanny Recovery Installer 0.8 for Windows by @uncannyjish	
 =================================================================
 
 Disclaimer: I'm not responsible for any damage that occurs to your device by the improper use of this tool or not following the instructions. 
@@ -28,15 +28,16 @@ Prequisites:
 Preparation:
 Download the latest recovery image and rename it to "<devicename>".
 For e.g. : If you have ginkgo, rename the file to "ginkgo". Extension should remain the default one.
-P.S : Some recoveries provide you a flashable zip. Extract the image file and use it. The tool only works with img files.
+P.S : Some recoveries provide you a flashable zip. Extract the image file and use it. The tool only works with .img files.
 
 Instructions:
 1. Extract the zip contents to a folder. {Refer Note}
 2. Copy the renamed recovery image into the folder named "images".
-3. Run the file named 'RunMe'.
+3. Run the file named 'Start'.
 4. Install ADB & Drivers first. {Refer Note 2}
-5. Put your phone in fastboot and connect.
-6. Follow On screen instructions.
+5. Run 'Start' again.
+6. Put your phone in fastboot and connect.
+7. Follow On screen instructions.
 
 Note: Please don't alter the folders or files. The zip is to be extracted completely and used as it is provided. 
 It's user's own responsibility if any damage occurs to the device due to tampering of the files.

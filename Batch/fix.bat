@@ -1,8 +1,8 @@
 @echo off
 
-:: Uncanny Recovery Installer 0.7 by @uncannyjish
+:: System Destroyed Fix 0.8 by @uncannyjish
 
-title System Destroyed Fix 0.7
+title System Destroyed Fix 0.8
 
 echo Detecting you device(should be on fastboot screen[Power+volume down])... 
 

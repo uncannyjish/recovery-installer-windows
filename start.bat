@@ -1,10 +1,56 @@
 @echo off
 
-:: Uncanny Recovery Installer 0.7 by @uncannyjish
+::::::::::::::::::::::::::::::::::::::::::::
+:: Automatically check & get admin rights V2
+::::::::::::::::::::::::::::::::::::::::::::
+@echo off
+CLS
+ECHO.
+ECHO =============================
+ECHO Running Admin shell
+ECHO =============================
+
+:init
+setlocal DisableDelayedExpansion
+set "batchPath=%~0"
+for %%k in (%0) do set batchName=%%~nk
+set "vbsGetPrivileges=%temp%\OEgetPriv_%batchName%.vbs"
+setlocal EnableDelayedExpansion
+
+:checkPrivileges
+NET FILE 1>NUL 2>NUL
+if '%errorlevel%' == '0' ( goto gotPrivileges ) else ( goto getPrivileges )
+
+:getPrivileges
+if '%1'=='ELEV' (echo ELEV & shift /1 & goto gotPrivileges)
+ECHO.
+ECHO **************************************
+ECHO Invoking UAC for Privilege Escalation
+ECHO **************************************
+
+ECHO Set UAC = CreateObject^("Shell.Application"^) > "%vbsGetPrivileges%"
+ECHO args = "ELEV " >> "%vbsGetPrivileges%"
+ECHO For Each strArg in WScript.Arguments >> "%vbsGetPrivileges%"
+ECHO args = args ^& strArg ^& " "  >> "%vbsGetPrivileges%"
+ECHO Next >> "%vbsGetPrivileges%"
+ECHO UAC.ShellExecute "!batchPath!", args, "", "runas", 1 >> "%vbsGetPrivileges%"
+"%SystemRoot%\System32\WScript.exe" "%vbsGetPrivileges%" %*
+exit /B
+
+:gotPrivileges
+setlocal & pushd .
+cd /d %~dp0
+if '%1'=='ELEV' (del "%vbsGetPrivileges%" 1>nul 2>nul  &  shift /1)
+
+::::::::::::::::::::::::::::
+::START
+::::::::::::::::::::::::::::
+
+:: Uncanny Recovery Installer 0.8 by @uncannyjish
 
 cls
 
-title Uncanny Recovery Installer 0.7
+title Uncanny Recovery Installer 0.8
 
 :entry
 
@@ -12,7 +58,7 @@ cls
 echo.
 echo ================================================
 echo.
-echo    Uncanny Recovery Installer 0.7 by @uncannyjish
+echo    Uncanny Recovery Installer 0.8 by @uncannyjish
 echo.
 echo ================================================
 echo.
@@ -55,10 +101,10 @@ echo.
 echo Installing ADB System-Wide...
 md "C:\Android\adb-fastboot"
 copy "%~dp0adb-fastboot" "C:\Android\adb-fastboot"
-setx ANDROID_HOME "C:\Android\adb-fastboot" /M
+setx /M path "%path%;C:\Android\adb-fastboot"
 echo.
-echo Closing Command Window...
-timeout /t 5 /nobreak
+echo Closing This Window. Please run again to install recovery.
+timeout /t 5 /nobreak >nul
 exit
 
 
