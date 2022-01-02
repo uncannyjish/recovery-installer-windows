@@ -1,5 +1,5 @@
 =================================================================
-	Uncanny Recovery Installer 0.8 for Windows by @uncannyjish	
+	Uncanny Recovery Installer 1.0 for Windows by @uncannyjish	
 =================================================================
 
 Disclaimer: I'm not responsible for any damage that occurs to your device by the improper use of this tool or not following the instructions. 
@@ -42,4 +42,4 @@ Instructions:
 Note: Please don't alter the folders or files. The zip is to be extracted completely and used as it is provided. 
 It's user's own responsibility if any damage occurs to the device due to tampering of the files.
 
-Note 2: On some older devices, a reboot might be required after driver installation.
+Note 2: On some older PCs, a reboot might be required after driver installation.

@@ -46,11 +46,11 @@ if '%1'=='ELEV' (del "%vbsGetPrivileges%" 1>nul 2>nul  &  shift /1)
 ::START
 ::::::::::::::::::::::::::::
 
-:: Uncanny Recovery Installer 0.8 by @uncannyjish
+:: Uncanny Recovery Installer 1.0 by @uncannyjish
 
 cls
 
-title Uncanny Recovery Installer 0.8
+title Uncanny Recovery Installer 1.0
 
 :entry
 
@@ -58,7 +58,7 @@ cls
 echo.
 echo ================================================
 echo.
-echo    Uncanny Recovery Installer 0.8 by @uncannyjish
+echo    Uncanny Recovery Installer 1.0 by @uncannyjish
 echo.
 echo ================================================
 echo.
