@@ -1,8 +1,8 @@
 @echo off
 
-:: Uncanny Recovery Installer 0.8 by @uncannyjish
+:: Uncanny Recovery Installer 1.0 by @uncannyjish
 
-title Uncanny Recovery Installer 0.8
+title Uncanny Recovery Installer 1.0
 
 cls
 

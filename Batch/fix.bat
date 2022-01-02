@@ -1,8 +1,8 @@
 @echo off
 
-:: System Destroyed Fix 0.8 by @uncannyjish
+:: System Destroyed Fix 1.0 by @uncannyjish
 
-title System Destroyed Fix 0.8
+title System Destroyed Fix 1.0
 
 echo Detecting you device(should be on fastboot screen[Power+volume down])... 
 
